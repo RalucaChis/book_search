@@ -1,0 +1,24 @@
+<mvc:View
+	controllerName="org.ubb.books.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true">
+	<Shell>
+		<App>
+			<pages>
+				<Page showHeader="false">
+					<tnt:ToolHeader>
+					<ToolbarSpacer width="20px"/>
+					<html:p class="text-header" style="font-size:25px">Online Library</html:p>
+					<ToolbarSpacer width="600px" />
+					</tnt:ToolHeader>
+					<content>
+						<mvc:XMLView viewName="org.ubb.books.view.CheckoutBookTable"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
